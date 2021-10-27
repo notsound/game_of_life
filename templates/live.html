@@ -9,7 +9,7 @@
 <table class="world">
     {% for i in range(game.world|length()) %}
         <tr>
-            {% for j in range(game.world[0]|length()) %}
+            {% for j in range(game.world[i]|length()) %}
                 {% if game.world[i][j] %}
                     <td class="cell living-cell"></td>
                 {% elif game.old_world[i][j] and game.world[i][j] == 0 %}
